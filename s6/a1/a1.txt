@@ -1,0 +1,29 @@
+Insert below records under songs table:
+
+	Divide 2017
+		Perfect, Pop, 2:00
+		Eraser, Pop, 2:00
+		Dive, Pop, 2:00
+
+	Riot! 2007
+		For a Pessimist, I'm Pretty Optimistic, Pop Rock, 2:00
+		That's What You Get, Pop Rock, 2:00
+		Hallelujah, Pop Rock, 3:00
+
+	Song I Wrote with Amy
+		Fall, Pop, 2:00
+		She, Pop, 2:00
+		Cold Coffee, Pop, 2:00
+
+*Write the solution here at a1.txt then create records on your database
+
+INSERT INTO songs (title, genre, length, album_id)
+	VALUES ("Perfect", "Pop", "00:02:00", 4),
+			("Eraser", "Pop", "00:02:00", 4),
+			("Dive", "Pop", "00:02:00", 4),
+			("For a Pessimist, I'm Pretty Optimistic", "Pop Rock", "00:02:00", 5),
+			("That's What You Get", "Pop Rock", "00:02:00", 5),
+			("Hallelujah", "Pop Rock", "00:03:00", 5),
+			("Fall", "Pop", "00:02:00", 1),
+			("She", "Pop", "00:02:00", 1),
+			("Cold Coffee", "Pop", "00:02:00", 1);

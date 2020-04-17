@@ -56,4 +56,25 @@
 			-RENAME COLUMN
 		DROP TABLE
 		RENAME TABLE
+
+		to rename a column in a table
+		ALTER TABLE <tablename> CHANGE <columnname> <newcolumnname> <dataype(length)>
+		ex. ALTER TABLE albums CHANGE name album_name varchar(255);
+
+		to add a column in a table
+		ALTER TABLE <tablename> ADD COLUMN <columnname> <datatype>(length)>;
+		ex. ALTER TABLE albums ADD COLUMN description text;
+
+		to drop a column in a table
+		ALTER TABLE <tablename> DROP COLUMN <columnname>;
+		ex. ALTER TABLE albums DROP COLUMN description;
+		
+		to rename a table
+		ALTER TABLE <tablename> RENAME TO <tablename>
+		ex. ALTER TABLE song_playlist RENAME TO songs_playlists;
+
+		to drop a table
+		DROP TABLE <tablename>
+		ex. DROP TABLE songs_playlists
+
 */

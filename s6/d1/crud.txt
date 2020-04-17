@@ -1,0 +1,72 @@
+CRUD operation - used to manipulate records inside our database
+
+Create - stores records in our database
+
+INSERT INTO <tablename> (column1, column2, column3) VALUES (value1, value2, value3)
+
+value1 will be the value for the column1
+value2 will be the value for the column2
+valueNth will be the value for the columnNth
+
+ex. 
+INSERT INTO artists (name) VALUES ("Taylor Swift");
+INSERT INTO artists (name) VALUES ("Paramore");
+INSERT INTO artists (name) VALUES ("Ed Sheeran");
+
+
+
+Retrieve - retrieves records in our database
+
+SELECT <columns> FROM <tablename>;
+
+ex.
+SELECT * FROM artists;
+SELECT name FROM artists;
+
+to select specific record/records we use the WHERE clause.
+WHERE clause will filter the rows and returns it.
+
+ex.
+SELECT name FROM artists WHERE name = "Taylor Swift";
+
+
+Update - updates, make changes on our records in our database.
+
+UPDATE <tablename> SET column1 = updatedvalue, column2 = updatedvalue WHERE column3 = val3;
+
+updatedvalue1 will be the new value of column1
+updatedvalue2 will be the new value of column2
+column3 = val3 describes the row to be updated
+
+ex. UPDATE artists SET name = "Taylor Lautner" WHERE name = "Taylor Swift";
+
+Delete - removes/deletes the record in our database
+
+DELETE FROM <tablename> WHERE column = value;
+
+column = value describes the row to be updated
+
+ex. DELETE FROM artists WHERE name = "Taylor Swift";
+
+*NOTE: Removing the WHERE clause will DELETE ALL THE ROWS on your table.
+
+
+AND / OR Clause - we put these after the WHERE clause
+
+AND - both of the conditions
+OR - either of the conditions
+
+ex.
+SELECT * FROM songs WHERE length > 240 AND genre = "OPM";
+
+
+LIKE Clause - to search for specified pattern in a column. We put this after the WHERE Clause
+
+wildcard = % - the percent sign represents one or multiple characters
+
+	columnname LIKE 'riot%' - finds any values starts with 'riot'
+	columnname LIKE '%riot' - finds any values ends with 'riot'
+	columnname LIKE '%riot%' - finds any values that have 'riot' in any position
+	columnname LIKE 'the%apple' - finds any values that starts with 'the' and ends with 'apple'
+
+SELECT * FROM albums WHERE artist_id = 3 AND album_name LIKE "%Riot!%"

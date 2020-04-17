@@ -1,0 +1,34 @@
+Instructions
+
+Delete all the songs that is under Divide 2017
+
+Update the album name and year with an id#1 into
+	name = "+", year = 2011
+
+Retrieve all the albums under Ed Sheeran
+
+Retrieve all the albums under Paramore
+
+Retrieve all songs with genre = Pop
+
+Retrieve all the songs under Riot 2007
+
+*Write the solution here at a1.txt then create the records on your database
+*Then push it on your gitlab
+
+
+
+solution:
+
+DELETE FROM songs WHERE album_id = "4";
+
+UPDATE albums SET album_name = "+", year = "2011-01-01" WHERE album_name = "Songs I Wrote with Amy";
+
+SELECT * FROM albums WHERE artist_id = 4;
+
+SELECT * FROM albums WHERE artist_id = 3;
+
+SELECT * FROM songs WHERE genre = "Pop";
+
+SELECT * FROM songs WHERE album_id = 5;
+
