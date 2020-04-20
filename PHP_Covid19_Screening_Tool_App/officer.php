@@ -94,17 +94,17 @@
 									<div id="body">
 										<div>
 											<label for="firstName" class="initial">First Name:</label>
-											<input type="text" id="firstName" name="firstName" placeholder="Your First Name">
+											<input type="text" id="firstName" name="firstName" placeholder="Your First Name" required>
 										</div>
 
 										<div>
 											<label for="lastName" class="initial">Last Name:</label>
-											<input type="text" id="lastName" name="lastName" placeholder="Your Last Name">
+											<input type="text" id="lastName" name="lastName" placeholder="Your Last Name" required>
 										</div>
 
 										<div>
 											<label for="age" class="initial">Age:</label>
-											<input type="number" id="age" name="age" placeholder="Your Age">
+											<input type="number" id="age" name="age" placeholder="Your Age" required>
 										</div>
 
 										<div>
@@ -165,6 +165,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 	<!-- external js -->
-	<script type="text/javascript" src="./assets/js/officer.js"></script>
+	<!-- <script type="text/javascript" src="./assets/js/officer.js"></script> -->
 </body>
 </html>

@@ -227,6 +227,6 @@ $results_id = $firstName . $lastName . $age;
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <!-- external js -->
-<script src="./assets/js/script.js"></script>
+<!-- <script src="./assets/js/script.js"></script> -->
 </body>
 </html>
