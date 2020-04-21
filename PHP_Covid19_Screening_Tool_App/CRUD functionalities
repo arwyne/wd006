@@ -1,0 +1,58 @@
+
+INSERT INTO questions (question)
+	VALUES ("Have you been to one of the COVID-19 affected countries in the last 14 days?"),
+			("Have you been in close contact with a confirmed case of coronavirus?"),
+			("Are you currently experiencing symptoms (cough, shortness of breath, fever)"),
+			("Emergency Contact Name and Number"),
+			("Body Temperature");
+
+INSERT INTO users (resultid, age, firstname, lastname)
+	VALUES ("5e9e7ba3f8e61e963a55907c", 35, "Britney", "Beard"),
+    		("5e9e7ba3357707dac60cf90a", 38, "Mcpherson", "Savage"),
+            ("5e9e7ba306ddf37a2d45b444", 31, "Sweeney", "Paul"),
+            ("5e9e7ba30d7511ee09cee451", 25, "Riddle", "Ballard"),
+            ("5e9e7ba3b4ab4214a28be3a2", 22, "Olive", "Knight"),
+            ("5e9e7ba331bbe5dfee45c3fa", 26, "Dennis", "Stevens"),
+            ("5e9e7ba3d31475146996a7b5", 33, "Walsh", "Browning"),
+            ("5e9e7ba3de003850030aca84", 27, "Carmen", "Lott"),
+            ("5e9e7ba3cf34576df37b73c0", 38, "Guerra", "Britt"),
+            ("5e9e7ba367c0a7a7e7aa7474", 35, "Madelyn", "Woods"),
+            ("5e9e7ba36410dd6c37827241", 22, "Rosario", "Haynes"),
+            ("5e9e7ba3740f67bd576c3bee", 38, "Suzette", "Morin"),
+            ("5e9e7ba317bbef82d213add3", 25, "Wagner", "Gilmore"),
+            ("5e9e7ba309a74aded81d480f", 27, "Burns", "Moody"),
+            ("5e9e7ba33429727fa3dc72a9", 40, "Marci", "Mendez"),
+            ("5e9e7ba3d3e8cc1452741604", 37, "Jessie", "Jackson"),
+            ("5e9e7ba37d932673422192ee", 31, "Ola", "Lancaster"),
+            ("5e9e7ba3748b5c138ebe12a3", 28, "Karina", "Small"),
+            ("5e9e7ba3d801cc682ac35304", 27, "Garza", "Lawrence"),
+            ("5e9e7ba3dba6a606a1fb18d6", 37, "Compton", "Moreno"),
+            ("5e9e7ba36cf4549e9492452b", 20, "Lou", "Morton"),
+            ("5e9e7ba37cb2bd6186dfa21f", 36, "Daniels", "Vega"),
+            ("5e9e7ba3e05d43414b00ae40", 20, "Alfreda", "Baxter"),
+            ("5e9e7ba316bebfecdedcb6eb", 21, "Carroll", "Ford"),
+            ("5e9e7ba31008156652f5314d", 34, "Harriet", "Lewis"),
+            ("5e9e7ba3106772f284ee8466", 21, "Winifred", "Morgan"),
+            ("5e9e7ba37707aeda035c05c4", 30, "Carr", "Brewer"),
+            ("5e9e7ba30fcfb9e3c7939104", 23, "Mariana", "Chandler"),
+            ("5e9e7ba3bf6ec42d4d08e23c", 20, "Robbie", "Green"),
+            ("5e9e7ba38a1f3a028431f200", 40, "Vanessa", "Hanson"),
+            ("5e9e7ba3ab9e8867b235086a", 23, "Carlson", "Parker"),
+            ("5e9e7ba3cfd221b01fa191eb", 20, "Joyce", "Glass"),
+            ("5e9e7ba35d6cd9b2a435a6b2", 40, "Alissa", "Robinson");
+
+
+UPDATE users SET lastname = "Morgan" WHERE resultid = "5e9e7ba3740f67bd576c3bee";
+
+UPDATE users SET lastname = "Morgan" WHERE resultid = "5e9e7ba35d6cd9b2a435a6b2";
+
+SELECT * FROM users WHERE lastname = "Morgan";
+SELECT * FROM users WHERE age = 38;
+SELECT * FROM users WHERE age = 40;
+SELECT * FROM users WHERE age <= 25;
+SELECT * FROM users WHERE age >= 26 AND age <= 30;
+SELECT * FROM users WHERE age >= 31;
+
+
+
+
