@@ -46,22 +46,16 @@
 
 					*/
 				 ?>
-				<?php if (isset($_SESSION['user']) && $_SESSION['user']['role_id'] == 1 ): ?>
-					
-					<li class="nav-item">
-						<a class="nav-link" href="../views/gallery.php">Gallery</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="../views/add_item_form.php">Add Item</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="../controllers/logout.php">Logout</a>
-					</li>
-					
-				<?php elseif (isset($_SESSION['user'])): ?>	
+				<?php if (isset($_SESSION['user'])): ?>
+
+					<?php if ($_SESSION['user']['role_id'] == 1 ): ?>
+						<li class="nav-item">
+							<a class="nav-link" href="./add_item_form.php">Add Item</a>
+						</li>
+					<?php endif ?>
 
 					<li class="nav-item">
-						<a class="nav-link" href="../views/gallery.php">Gallery</a>
+						<a class="nav-link" href="./gallery.php">Gallery</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="../controllers/logout.php">Logout</a>

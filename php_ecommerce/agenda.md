@@ -38,3 +38,21 @@ Day 3
 	- if the user is logged out, the link log out shot not appear
 
 
+Next Week (April 27)
+	Continue doing your php-minicapstone Covid19 Screening Tool App
+		1.5 session, you will build the back end part:
+		requirements: 
+		Create a registration form that will get the users'age, firstname, lastname, email, username and password
+			*Registration of the user is optional*
+		Create a login form so users can choose to login if they want to view the results on their profile page
+		Once logged in, the firstname of the user should appear on the app's nav bar
+		Logged in users that took the test can access their profile page that fetches the results from the app's database
+		If the user took the test anonymously, the summary page will display the results but user will not be able to access the result once he leaves the page. (use Session)
+
+		Stretch Goal: 
+		 *Create an admin account that shows a page of all the result gathered by the app:
+		      * of PUI
+		      * of PUM
+		      * of neither
+
+For the Database - We'll host it on Remotemysql.com (Later 4pm)
